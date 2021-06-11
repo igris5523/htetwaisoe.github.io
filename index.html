@@ -2,105 +2,140 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
+        <script src="https://kit.fontawesome.com/cb07d8fa89.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width ,initial-scale=1.0">
         <title>igris.</title>
     </head>
-    <body bgcolor="black">
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">i g r i s.</a>
+    <body>
+        <div class="main_container">
+            <div class="nav_bar" id="nav__">
+                <div class="nav_logo">
+                    <img src="z2/logo.png " class="logo">
                 </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link"><i class='material-icons'>home</i></a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#data" class="nav__link">Data</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main" >
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title"><span class="home__title-color">i g r i s.</span>website<br></h1>
-                </div class = "iii">
-                <h3>- Road to data scientist.<br>- Ucsy student.</h3>
+                <a href="#" class="menu_a list__ only_" id="darkmode">  
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </a>
+                <div class="nav_menu">
+                    <div class="list_div">
+                        <a href="" class="menu_a list__">home</a>
+                        <a href="" class="menu_a list__">about</a>
+                        <a href="" class="menu_a list__">detail</a>
+                        <a href="" class="menu_a list__">contact</a>
+                    </div>
                 
-                
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">DS.</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="datascience.png" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">Data Science</h2>
-                        <p class="about__text">Data science is an interdisciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from structured and unstructured data, and apply knowledge and actionable insights from data across a broad range of application domains. </p>           
-                    </div>                                   
+                    <a href="#" class="icon">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </a>
                 </div>
-            </section>
-
-            <!--===== WORK =====-->
-            <section class="work section" id="data">
-                <h2 class="section-title">list.</h2>
-
-                <div class="work__container bd-grid">
-                    <div class="work__img">
-                        <h4><a href="#home" class="nav__link active">Python</a></h4>
-                    </div>
-                    <div class="work__img">
-                        <h4><a href="#home" class="nav__link active">Statistics</a></h4>
-                    </div>
-                    <div class="work__img">
-                        <h4><a href="#home" class="nav__link active">Data Analysis</a></h4>
-                    </div>
-                    <div class="work__img">
-                        <h4><a href="#home" class="nav__link active">Machine Learning</a></h4>
-                    </div>
-                    <div class="work__img">
-                        <h4><a href="#home" class="nav__link active">Data Visualization</a></h4>
-                    </div>
-                    <div class="work__img">
-                        <h4><a href="#home" class="nav__link active">Deep Learning</a></h4>
+            </div>
+            <div class="row">
+                <div class="text_col">
+                    <div class="text_header">
+                        <h1 class="h_1">i g r i s.</h1>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and 
+                            typesetting industry. Lorem Ipsum has been the industry's
+                            standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a
+                            type specimen book. It has survived not only five centuries,
+                            but also the leap into electronic typesetting, remaining 
+                            essentially unchanged.
+                        </p>
+                        <div class="botton__" id="on__" >
+                            <a href="#" class="button" onclick="show()">start <span> >> </span></a>
+                        </div>
                     </div>
                 </div>
-            </section>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <div class="footer__social">
-                <a href="https://www.facebook.com/igris5523" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://www.instagram.com/igris5523" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://github.com/htetwaisoe" class="footer__icon"><i class='bx bxl-github' ></i></a>
-            </div>  
-        </footer>
-
-
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
+                <div class="image_col">
+                    <div class="inner_image">
+                        <img src="z2/row_img.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <footer class="footer_">
+                <h1 class="h1__"> about.</h1>
+                <div class="layout_row">
+                    <div class="first_div">
+                        <div class="innner_div">
+                            <div class="layout_img">
+                                <img src="z2/05.jpg">
+                            </div>
+                            <div class="text_layout">
+                                <h1>zero two.</h1>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and 
+                                    typesetting industry. Lorem Ipsum has been the industry's
+                                   
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="first_div">
+                        <div class="innner_div">
+                            <div class="layout_img">
+                                <img src="z2/01.png">
+                            </div>
+                            <div class="text_layout">
+                                <h1>zero two.</h1>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and 
+                                    typesetting industry. Lorem Ipsum has been the industry's
+                               
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="first_div">
+                        <div class="innner_div">
+                            <div class="layout_img">
+                                <img src="https://bit.ly/3pb3np0">
+                            </div>
+                            <div class="text_layout">
+                                <h1>zero two.</h1>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and 
+                                    typesetting industry. Lorem Ipsum has been the industry's
+                                
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="first_div">
+                        <div class="innner_div">
+                            <div class="layout_img">
+                                <img src="https://bit.ly/3uJzAVx">
+                            </div>
+                            <div class="text_layout">
+                                <h1>zero two.</h1>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and 
+                                    typesetting industry. Lorem Ipsum has been the industry's
+                                
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            
+        </div>
+        <div class="below_div">
+            <div class="fac_insta_git">
+                <a href="https://www.facebook.com/igris5523" class="footer__icon"><i class="fa">&#xf082;</i></a>
+                <a href="https://www.instagram.com/igris5523" class="insta_logo"><i class="fa">&#xf16d;</i></a>
+                <a href="https://www.github.com/htetwaisoe" class="git_logo"><i class="fa">&#xf09b;</i></a>
+            </div>
+        </div>
+        <div class="text_below">
+            <p>@copyright.</p>
+        </div>
+        
+        
         <script src="main.js"></script>
     </body>
 </html>
