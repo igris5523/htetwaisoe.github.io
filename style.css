@@ -23,6 +23,7 @@ body{
     top: 0;
     opacity: 0.92;
     transition: all 2.5s linear;
+    z-index: 1;
 }
 .nav_logo{
     width: 150px;

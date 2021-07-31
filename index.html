@@ -6,6 +6,7 @@
         <script src="https://kit.fontawesome.com/cb07d8fa89.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <title>igris.</title>
     </head>
     <body>
@@ -34,10 +35,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="text_col">
+                <div class="text_col sr_left">
                     <div class="text_header">
                         <h1 class="h_1">i g r i s.</h1>
-                        <p>
+                        <p class="animate__rubberBand">
                             Lorem Ipsum is simply dummy text of the printing and 
                             typesetting industry. Lorem Ipsum has been the industry's
                             standard dummy text ever since the 1500s, when an unknown
@@ -51,16 +52,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="image_col">
+                <div class="image_col sr_right">
                     <div class="inner_image">
-                        <img src="z2/row_img.png" alt="">
+                        <img src="z2/row_img.png" alt="" class="img">
                     </div>
                 </div>
             </div>
             <footer class="footer_">
                 <h1 class="h1__"> about.</h1>
                 <div class="layout_row">
-                    <div class="first_div">
+                    <div class="first_div top">
                         <div class="innner_div">
                             <div class="layout_img">
                                 <img src="z2/05.jpg">
@@ -90,10 +91,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="first_div">
+                    <div class="first_div top">
                         <div class="innner_div">
                             <div class="layout_img">
-                                <img src="https://bit.ly/3pb3np0">
+                                <img src="z2/01.png">
                             </div>
                             <div class="text_layout">
                                 <h1>zero two.</h1>
@@ -108,7 +109,7 @@
                     <div class="first_div">
                         <div class="innner_div">
                             <div class="layout_img">
-                                <img src="https://bit.ly/3uJzAVx">
+                                <img src="z2/01.png">
                             </div>
                             <div class="text_layout">
                                 <h1>zero two.</h1>
@@ -137,5 +138,40 @@
         
         
         <script src="main.js"></script>
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+        <script>
+            window.sr = ScrollReveal();
+            sr.reveal('.sr_left',{
+                origin : 'left',
+                distance : '200px',
+                duration : '1000',
+                delay :'100'
+            });
+            sr.reveal('.sr_right',{
+                origin:'right',
+                distance:'200px',
+                duration:'1000',
+                delay:'300'
+            });
+            sr.reveal('.first_div',{
+                origin:'bottom',
+                distance:'200px',
+                duration:'1000',
+                delay:'100'
+            });
+            sr.reveal('.top',{
+                origin:'top',
+                distance:'200px',
+                duration:'1000',
+                delay:'300'
+            });
+            sr.reveal('.logo',{
+                duration:'3000',
+                rotate:{
+                    x:1,
+                    y:200
+                }
+            });
+        </script>
     </body>
 </html>
